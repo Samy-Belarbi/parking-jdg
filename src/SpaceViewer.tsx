@@ -41,6 +41,7 @@ export const SpaceViewer: FC<SpaceViewerProps> = ({ parkingSlot }) => {
               z: -77.33947423912399,
             },
           },
+          hideNavigationButtons: true,
         });
       })
       .catch((error) => console.error(error));
