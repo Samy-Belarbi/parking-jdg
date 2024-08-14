@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useState } from "react";
+import { FC, useEffect, useState, useRef } from "react";
 import { loadSmplrJs } from "@smplrspace/smplr-loader";
 import { Space } from "@smplrspace/smplr-loader/dist/generated/smplr";
 
@@ -11,7 +11,7 @@ interface SpaceViewerProps {
 }
 
 export const SpaceViewer: FC<SpaceViewerProps> = ({ parkingSlot }) => {
-  const spaceRef = React.useRef<Space>();
+  const spaceRef = useRef<Space>();
   const [viewerReady, setViewerReady] = useState(false);
 
   useEffect(() => {
@@ -36,7 +36,7 @@ export const SpaceViewer: FC<SpaceViewerProps> = ({ parkingSlot }) => {
   }, []);
 
   useEffect(() => {
-    if (!viewerReady) {
+    if (!viewerReady || spaceRef.current === undefined) {
       return;
     }
 
@@ -51,6 +51,10 @@ export const SpaceViewer: FC<SpaceViewerProps> = ({ parkingSlot }) => {
     });
 
     icons.forEach((icon) => {
+      if (spaceRef.current === undefined) {
+        return;
+      }
+
       spaceRef.current.addDataLayer<Icon>({
         id: icon.id,
         type: "icon",
@@ -73,8 +77,15 @@ export const SpaceViewer: FC<SpaceViewerProps> = ({ parkingSlot }) => {
     });
 
     return () => {
+      if (spaceRef.current === undefined) {
+        return;
+      }
+
       spaceRef.current.removeDataLayer("places");
       icons.forEach((icon) => {
+        if (spaceRef.current === undefined) {
+          return;
+        }
         spaceRef.current.removeDataLayer(icon.id);
       });
     };
