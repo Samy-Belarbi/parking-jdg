@@ -9,13 +9,15 @@ import ShareIcon from "./assets/share_icon.svg";
 const MIN_NUMBER_OF_PARKING_SLOTS = 1;
 const MAX_NUMBER_OF_PARKING_SLOTS = 136;
 
+export type ParkingSlotSearched = { numberPlace: number | undefined };
+
 function App() {
   const queryParameters = new URLSearchParams(window.location.search);
   const parkingSlotFromUrl = queryParameters.get("place");
 
   const toast = useToast();
 
-  const [parkingSlot, setParkingSlot] = useState<number | undefined>(undefined);
+  const [parkingSlot, setParkingSlot] = useState<ParkingSlotSearched>({ numberPlace: undefined });
   const [numberInputValue, setNumberInputValue] = useState<number | undefined>(undefined);
 
   useEffect(() => {
@@ -23,7 +25,7 @@ function App() {
       const parsedParkingSlot = parseInt(parkingSlotFromUrl, 10);
 
       if (parsedParkingSlot >= MIN_NUMBER_OF_PARKING_SLOTS && parsedParkingSlot <= MAX_NUMBER_OF_PARKING_SLOTS) {
-        setParkingSlot(parsedParkingSlot);
+        setParkingSlot({ numberPlace: parsedParkingSlot });
         setNumberInputValue(parsedParkingSlot);
       }
     }
@@ -43,10 +45,10 @@ function App() {
     return number < MIN_NUMBER_OF_PARKING_SLOTS || number > MAX_NUMBER_OF_PARKING_SLOTS;
   };
 
-  const parkingSlotError = isParkingNumberWrong(parkingSlot);
+  const parkingSlotError = isParkingNumberWrong(parkingSlot.numberPlace);
 
   const onSubmit = () => {
-    setParkingSlot(numberInputValue);
+    setParkingSlot({ numberPlace: numberInputValue });
   };
 
   return (
@@ -54,7 +56,9 @@ function App() {
       <SpaceViewer parkingSlotSearched={parkingSlot} />
       <form onSubmit={(e) => e.preventDefault()}>
         <FormControl className="search-container" isInvalid={parkingSlotError} onSubmit={onSubmit}>
-          <FormLabel className="place-number">N° de la place :</FormLabel>
+          <FormLabel color="teal.700" margin={0}>
+            N° de place :
+          </FormLabel>
           <div className="number-input-container">
             <NumberInput
               min={MIN_NUMBER_OF_PARKING_SLOTS}
@@ -64,7 +68,7 @@ function App() {
               onChange={(_, value) => {
                 setNumberInputValue(value);
               }}
-              focusBorderColor={parkingSlotError ? "red.400" : "teal.300"}
+              focusBorderColor={parkingSlotError ? "red.400" : "teal.500"}
               errorBorderColor="red.400"
               backgroundColor="gray.100"
               borderRadius={10}
@@ -92,7 +96,7 @@ function App() {
               isDisabled={parkingSlotError || isParkingNumberWrong(numberInputValue) || typeof numberInputValue !== "number" || isNaN(numberInputValue)}
             />
           </div>
-          <FormErrorMessage>Ce numéro de place n'existe pas.</FormErrorMessage>
+          <FormErrorMessage margin={0}>Ce numéro de place n'existe pas.</FormErrorMessage>
         </FormControl>
       </form>
     </div>

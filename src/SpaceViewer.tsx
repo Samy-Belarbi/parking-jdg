@@ -8,9 +8,10 @@ import CenterIcon from "./assets/center_icon.svg";
 
 import "./style.css";
 import { IconButton } from "@chakra-ui/react";
+import { ParkingSlotSearched } from "./App.tsx";
 
 interface SpaceViewerProps {
-  parkingSlotSearched: number | undefined;
+  parkingSlotSearched: ParkingSlotSearched;
 }
 
 const DEFAULT_CAMERA_PLACEMENT = {
@@ -80,7 +81,7 @@ export const SpaceViewer: FC<SpaceViewerProps> = ({ parkingSlotSearched }) => {
       type: "polygon",
       data: parkingSlots,
       tooltip: (d: ParkingSlot) => d.name,
-      color: (d: ParkingSlot) => (Number(d.name.replace(/^\D+/g, "")) === parkingSlotSearched ? "#40A9FF" : "#818181"),
+      color: (d: ParkingSlot) => (Number(d.name.replace(/^\D+/g, "")) === parkingSlotSearched.numberPlace ? "#40A9FF" : "#818181"),
       alpha: 1,
       height: 0.25,
       onClick: (d: ParkingSlot) => {
@@ -88,8 +89,8 @@ export const SpaceViewer: FC<SpaceViewerProps> = ({ parkingSlotSearched }) => {
       },
     });
 
-    if (parkingSlotSearched) {
-      const parkingSlot = parkingSlots.find((slot) => Number(slot.name.replace(/^\D+/g, "")) === parkingSlotSearched);
+    if (parkingSlotSearched.numberPlace) {
+      const parkingSlot = parkingSlots.find((slot) => Number(slot.name.replace(/^\D+/g, "")) === parkingSlotSearched.numberPlace);
 
       if (parkingSlot) {
         setCameraPlacementOnParkingSlot(parkingSlot as ParkingSlot);
