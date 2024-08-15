@@ -130,15 +130,17 @@ export const SpaceViewer: FC<SpaceViewerProps> = ({ parkingSlotSearched }) => {
   return (
     <div className="smplr-wrapper">
       <div id="parking-jdg" className="smplr-embed"></div>
-      <IconButton
-        className="center-icon"
-        colorScheme="blackAlpha"
-        aria-label="center"
-        variant="outline"
-        onClick={() => setDefaultCameraPlacement()}
-        size="xs"
-        icon={<img src={CenterIcon} alt="center" width="14" />}
-      />
+      {viewerReady && (
+        <IconButton
+          className="center-icon"
+          colorScheme="blackAlpha"
+          aria-label="center"
+          variant="outline"
+          onClick={() => setDefaultCameraPlacement()}
+          size="xs"
+          icon={<img src={CenterIcon} alt="center" width="14" />}
+        />
+      )}
     </div>
   );
 };

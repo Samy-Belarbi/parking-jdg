@@ -61,6 +61,7 @@ function App() {
           </FormLabel>
           <div className="number-input-container">
             <NumberInput
+              flex={1}
               min={MIN_NUMBER_OF_PARKING_SLOTS}
               max={MAX_NUMBER_OF_PARKING_SLOTS}
               keepWithinRange={false}

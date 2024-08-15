@@ -7,9 +7,17 @@
   padding: 1rem;
 }
 
+@media only screen and (max-width: 600px) {
+  form {
+    width: 100%;
+  }
+}
+
 .search-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
   gap: 8px;
 }
 
@@ -33,7 +41,7 @@
 }
 
 .center-icon {
-  position: absolute;
-  top: 94%;
-  left: 2%;
+  position: absolute !important;
+  left: 1.5%;
+  bottom: 1%;
 }
