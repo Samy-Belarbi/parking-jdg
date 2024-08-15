@@ -1,9 +1,3 @@
-type UnknownData = Record<string, unknown>;
-
-export interface ParkingSlot extends UnknownData {
-  name: string;
-}
-
 export const parkingSlots = [
   {
     id: "2311bb0d-b497-4e67-aa53-ea1c988e1597",
@@ -7416,10 +7410,7 @@ export const parkingSlots = [
   },
 ];
 
-export interface Icon extends UnknownData {
-  name: string;
-  image: string;
-}
+export type ParkingSlot = (typeof parkingSlots)[0];
 
 export const icons = [
   {
@@ -7540,3 +7531,5 @@ export const icons = [
     layerType: "point",
   },
 ];
+
+export type Icon = (typeof icons)[0];
