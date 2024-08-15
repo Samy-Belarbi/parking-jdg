@@ -7,14 +7,29 @@ import { Icon, icons, ParkingSlot, parkingSlots } from "../data/data.ts";
 import "./style.css";
 
 interface SpaceViewerProps {
-  parkingSlot: number | undefined;
+  parkingSlotSearched: number | undefined;
 }
 
-export const SpaceViewer: FC<SpaceViewerProps> = ({ parkingSlot }) => {
+export const SpaceViewer: FC<SpaceViewerProps> = ({ parkingSlotSearched }) => {
   const spaceRef = useRef<Space>();
   const [viewerReady, setViewerReady] = useState(false);
 
   const [hasZoomedOut, setHasZoomedOut] = useState(false);
+
+  const setCameraPlacementOnParkingSlot = (parkingSlot: ParkingSlot) => {
+    const currentCameraPlacement = spaceRef.current?.getCameraPlacement();
+
+    spaceRef.current?.setCameraPlacement({
+      ...currentCameraPlacement,
+      target: {
+        x: parkingSlot.coordinates[0][0].x,
+        z: parkingSlot?.coordinates[0][0].z,
+        y: 5,
+      },
+      animate: true,
+      animationDuration: 1,
+    });
+  };
 
   useEffect(() => {
     loadSmplrJs()
@@ -62,10 +77,23 @@ export const SpaceViewer: FC<SpaceViewerProps> = ({ parkingSlot }) => {
       type: "polygon",
       data: parkingSlots,
       tooltip: (d: ParkingSlot) => d.name,
-      color: (d: ParkingSlot) => (Number(d.name.replace(/^\D+/g, "")) === parkingSlot ? "#40A9FF" : "#818181"),
+      color: (d: ParkingSlot) => (Number(d.name.replace(/^\D+/g, "")) === parkingSlotSearched ? "#40A9FF" : "#818181"),
       alpha: 1,
       height: 0.25,
+      onClick: (d: ParkingSlot) => {
+        setCameraPlacementOnParkingSlot(d);
+      },
     });
+
+    if (parkingSlotSearched) {
+      const parkingSlot = parkingSlots.find((slot) => Number(slot.name.replace(/^\D+/g, "")) === parkingSlotSearched);
+
+      if (!parkingSlot) {
+        return;
+      }
+
+      setCameraPlacementOnParkingSlot(parkingSlot as ParkingSlot);
+    }
 
     icons.forEach((icon) => {
       spaceRef.current?.addDataLayer<Icon>({
@@ -95,7 +123,7 @@ export const SpaceViewer: FC<SpaceViewerProps> = ({ parkingSlot }) => {
         spaceRef.current?.removeDataLayer(icon.id);
       });
     };
-  }, [viewerReady, parkingSlot, hasZoomedOut]);
+  }, [viewerReady, parkingSlotSearched, hasZoomedOut]);
 
   return (
     <div className="smplr-wrapper">

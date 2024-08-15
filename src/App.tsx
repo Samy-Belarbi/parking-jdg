@@ -36,7 +36,7 @@ function App() {
 
   return (
     <div className="container">
-      <SpaceViewer parkingSlot={parkingSlot} />
+      <SpaceViewer parkingSlotSearched={parkingSlot} />
       <div className="search-container">
         <p className="place-number">N° de la place :</p>
         <div className="number-input-container">
