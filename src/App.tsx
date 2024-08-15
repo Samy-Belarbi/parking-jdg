@@ -18,15 +18,14 @@ function App() {
   const toast = useToast();
 
   const [parkingSlot, setParkingSlot] = useState<ParkingSlotSearched>({ numberPlace: undefined });
-  const [numberInputValue, setNumberInputValue] = useState<number | undefined>(undefined);
+  const [numberInputValue, setNumberInputValue] = useState<number | undefined>(parkingSlotFromUrl ? Number(parkingSlotFromUrl) : undefined);
 
   useEffect(() => {
     if (parkingSlotFromUrl) {
-      const parsedParkingSlot = parseInt(parkingSlotFromUrl, 10);
+      const parsedParkingSlot = Number(parkingSlotFromUrl);
 
       if (parsedParkingSlot >= MIN_NUMBER_OF_PARKING_SLOTS && parsedParkingSlot <= MAX_NUMBER_OF_PARKING_SLOTS) {
         setParkingSlot({ numberPlace: parsedParkingSlot });
-        setNumberInputValue(parsedParkingSlot);
       }
     }
   }, [parkingSlotFromUrl]);
@@ -39,13 +38,14 @@ function App() {
     const isNan = isNaN(number);
 
     if (isNan) {
-      return true;
+      return false;
     }
 
     return number < MIN_NUMBER_OF_PARKING_SLOTS || number > MAX_NUMBER_OF_PARKING_SLOTS;
   };
 
   const parkingSlotError = isParkingNumberWrong(parkingSlot.numberPlace);
+  const numberInputValueError = isParkingNumberWrong(numberInputValue);
 
   const onSubmit = () => {
     setParkingSlot({ numberPlace: numberInputValue });
@@ -55,7 +55,7 @@ function App() {
     <div className="container">
       <SpaceViewer parkingSlotSearched={parkingSlot} />
       <form onSubmit={(e) => e.preventDefault()}>
-        <FormControl className="search-container" isInvalid={parkingSlotError} onSubmit={onSubmit}>
+        <FormControl className="search-container" isInvalid={numberInputValueError} onSubmit={onSubmit}>
           <FormLabel color="teal.700" margin={0}>
             N° de place :
           </FormLabel>
@@ -68,12 +68,12 @@ function App() {
               onChange={(_, value) => {
                 setNumberInputValue(value);
               }}
-              focusBorderColor={parkingSlotError ? "red.400" : "teal.500"}
+              focusBorderColor={numberInputValueError ? "red.400" : "teal.500"}
               errorBorderColor="red.400"
               backgroundColor="gray.100"
               borderRadius={10}
-              isInvalid={parkingSlotError}
-              defaultValue={parkingSlotFromUrl ?? undefined}
+              isInvalid={numberInputValueError}
+              defaultValue={numberInputValue}
             >
               <NumberInputField />
             </NumberInput>
