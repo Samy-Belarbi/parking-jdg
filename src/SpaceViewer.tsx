@@ -4,17 +4,29 @@ import { Space } from "@smplrspace/smplr-loader/dist/generated/smplr";
 
 import { Icon, icons, ParkingSlot, parkingSlots } from "../data/data.ts";
 
+import CenterIcon from "./assets/center_icon.svg";
+
 import "./style.css";
+import { IconButton } from "@chakra-ui/react";
 
 interface SpaceViewerProps {
   parkingSlotSearched: number | undefined;
 }
 
+const DEFAULT_CAMERA_PLACEMENT = {
+  alpha: -3.1259822158605868,
+  beta: 0.015531250000000104,
+  radius: 350,
+  target: {
+    x: 145.3335497549733,
+    y: 5,
+    z: -77.33947423912399,
+  },
+};
+
 export const SpaceViewer: FC<SpaceViewerProps> = ({ parkingSlotSearched }) => {
   const spaceRef = useRef<Space>();
   const [viewerReady, setViewerReady] = useState(false);
-
-  const [hasZoomedOut, setHasZoomedOut] = useState(false);
 
   const setCameraPlacementOnParkingSlot = (parkingSlot: ParkingSlot) => {
     const currentCameraPlacement = spaceRef.current?.getCameraPlacement();
@@ -31,6 +43,8 @@ export const SpaceViewer: FC<SpaceViewerProps> = ({ parkingSlotSearched }) => {
     });
   };
 
+  const setDefaultCameraPlacement = () => spaceRef.current?.setCameraPlacement({ ...structuredClone(DEFAULT_CAMERA_PLACEMENT), animate: true, animationDuration: 1 });
+
   useEffect(() => {
     loadSmplrJs()
       .then((smplr) => {
@@ -44,18 +58,12 @@ export const SpaceViewer: FC<SpaceViewerProps> = ({ parkingSlotSearched }) => {
           preview: false,
           loadingMessage: "Parking en cours de chargement...",
           mode: "3d",
-          onReady: () => setViewerReady(true),
-          onError: (error: unknown) => console.error("Could not start viewer", error),
-          cameraPlacement: {
-            alpha: -3.1259822158605868,
-            beta: 0.015531250000000104,
-            radius: 154.31032116937382,
-            target: {
-              x: 145.3335497549733,
-              y: 5,
-              z: -77.33947423912399,
-            },
+          onReady: () => {
+            setViewerReady(true);
+            setDefaultCameraPlacement();
           },
+          onError: (error: unknown) => console.error("Could not start viewer", error),
+          cameraPlacement: { ...structuredClone(DEFAULT_CAMERA_PLACEMENT) },
           hideNavigationButtons: true,
         });
       })
@@ -65,11 +73,6 @@ export const SpaceViewer: FC<SpaceViewerProps> = ({ parkingSlotSearched }) => {
   useEffect(() => {
     if (!viewerReady) {
       return;
-    }
-
-    if (!hasZoomedOut) {
-      spaceRef.current?.zoomOut();
-      setHasZoomedOut(true);
     }
 
     spaceRef.current?.addDataLayer<ParkingSlot>({
@@ -121,11 +124,20 @@ export const SpaceViewer: FC<SpaceViewerProps> = ({ parkingSlotSearched }) => {
         spaceRef.current?.removeDataLayer(icon.id);
       });
     };
-  }, [viewerReady, parkingSlotSearched, hasZoomedOut]);
+  }, [viewerReady, parkingSlotSearched]);
 
   return (
     <div className="smplr-wrapper">
       <div id="parking-jdg" className="smplr-embed"></div>
+      <IconButton
+        className="center-icon"
+        colorScheme="blackAlpha"
+        aria-label="center"
+        variant="outline"
+        onClick={() => setDefaultCameraPlacement()}
+        size="xs"
+        icon={<img src={CenterIcon} alt="center" width="14" />}
+      />
     </div>
   );
 };
