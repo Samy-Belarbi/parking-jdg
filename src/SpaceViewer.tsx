@@ -88,11 +88,9 @@ export const SpaceViewer: FC<SpaceViewerProps> = ({ parkingSlotSearched }) => {
     if (parkingSlotSearched) {
       const parkingSlot = parkingSlots.find((slot) => Number(slot.name.replace(/^\D+/g, "")) === parkingSlotSearched);
 
-      if (!parkingSlot) {
-        return;
+      if (parkingSlot) {
+        setCameraPlacementOnParkingSlot(parkingSlot as ParkingSlot);
       }
-
-      setCameraPlacementOnParkingSlot(parkingSlot as ParkingSlot);
     }
 
     icons.forEach((icon) => {
