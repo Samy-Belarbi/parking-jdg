@@ -97,7 +97,7 @@ function App() {
                 });
               }}
               icon={<img src={ShareIcon} alt="search" width="19" />}
-              isDisabled={parkingSlotError || isParkingNumberGood(numberInputValue) || typeof numberInputValue !== "number" || isNaN(numberInputValue)}
+              isDisabled={numberInputValueError || typeof numberInputValue !== "number"}
             />
           </div>
           <FormErrorMessage margin={0}>Ce numéro de place n'existe pas.</FormErrorMessage>
