@@ -3998,40 +3998,6 @@
         "mapped": true
       },
       {
-        "id": "5c002a8d-8aa4-4ae1-bb80-60d566a56405",
-        "name": "autoroom 90",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 168.691,
-              "z": -50.983,
-              "levelIndex": 0
-            },
-            {
-              "x": 168.692,
-              "z": -50.987,
-              "levelIndex": 0
-            },
-            {
-              "x": 168.692,
-              "z": -50.983,
-              "levelIndex": 0
-            },
-            {
-              "x": 168.691,
-              "z": -50.983,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
         "id": "59b8ad09-18d1-432c-b51c-f1c77fbc7681",
         "name": "Place 100",
         "levelIndex": 0,
@@ -4073,40 +4039,6 @@
             {
               "x": 169.264,
               "z": -56.679,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
-        "id": "c4433478-bfd1-46ae-9701-804bfa25f560",
-        "name": "autoroom 92",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 168.692,
-              "z": -50.987,
-              "levelIndex": 0
-            },
-            {
-              "x": 169.263,
-              "z": -56.679,
-              "levelIndex": 0
-            },
-            {
-              "x": 169.264,
-              "z": -56.679,
-              "levelIndex": 0
-            },
-            {
-              "x": 168.692,
-              "z": -50.987,
               "levelIndex": 0
             }
           ]
@@ -4310,74 +4242,6 @@
         "mapped": true
       },
       {
-        "id": "da3d2eb9-662b-4b09-9b24-1d3ce865c5c7",
-        "name": "autoroom 98",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 174.075,
-              "z": -50.546,
-              "levelIndex": 0
-            },
-            {
-              "x": 174.073,
-              "z": -50.547,
-              "levelIndex": 0
-            },
-            {
-              "x": 174.075,
-              "z": -50.547,
-              "levelIndex": 0
-            },
-            {
-              "x": 174.075,
-              "z": -50.546,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
-        "id": "a98d9511-4a32-464a-aaa3-04b39de23282",
-        "name": "autoroom 99",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 174.073,
-              "z": -50.547,
-              "levelIndex": 0
-            },
-            {
-              "x": 174.764,
-              "z": -56.174,
-              "levelIndex": 0
-            },
-            {
-              "x": 174.075,
-              "z": -50.547,
-              "levelIndex": 0
-            },
-            {
-              "x": 174.073,
-              "z": -50.547,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
         "id": "3b3bf710-b2bf-48bd-b1ec-7cd06ec97e1f",
         "name": "Place 102",
         "levelIndex": 0,
@@ -4422,40 +4286,6 @@
         "mapped": true
       },
       {
-        "id": "0acd1d1c-8b37-4aee-807f-8898ce4ece46",
-        "name": "autoroom 101",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 174.093,
-              "z": -50.545,
-              "levelIndex": 0
-            },
-            {
-              "x": 174.075,
-              "z": -50.546,
-              "levelIndex": 0
-            },
-            {
-              "x": 174.075,
-              "z": -50.547,
-              "levelIndex": 0
-            },
-            {
-              "x": 174.093,
-              "z": -50.545,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
         "id": "b8d1fc04-e133-4f8d-a6c2-8f42782b6abf",
         "name": "Place 131",
         "levelIndex": 0,
@@ -4492,40 +4322,6 @@
             {
               "x": 176.435,
               "z": -44.169,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
-        "id": "68543a44-1a79-4d6c-9a39-b24cfe1c5f33",
-        "name": "autoroom 103",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 177.329,
-              "z": -55.947,
-              "levelIndex": 0
-            },
-            {
-              "x": 176.706,
-              "z": -50.316,
-              "levelIndex": 0
-            },
-            {
-              "x": 176.705,
-              "z": -50.316,
-              "levelIndex": 0
-            },
-            {
-              "x": 177.329,
-              "z": -55.947,
               "levelIndex": 0
             }
           ]
@@ -4905,40 +4701,6 @@
         "mapped": true
       },
       {
-        "id": "253cc04d-328f-4811-8c96-dda43234a575",
-        "name": "autoroom 113",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 184.833,
-              "z": -49.63,
-              "levelIndex": 0
-            },
-            {
-              "x": 185.368,
-              "z": -55.221,
-              "levelIndex": 0
-            },
-            {
-              "x": 184.838,
-              "z": -49.63,
-              "levelIndex": 0
-            },
-            {
-              "x": 184.833,
-              "z": -49.63,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
         "id": "46d4a962-69b2-4935-b0ea-a0d741b1dcb3",
         "name": "Place 106",
         "levelIndex": 0,
@@ -5092,113 +4854,6 @@
             {
               "x": 187.436,
               "z": -49.4,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
-        "id": "34b5f234-14e7-49bf-8797-fe5fcc1ee81f",
-        "name": "autoroom 118",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 189.667,
-              "z": -34.318,
-              "levelIndex": 0
-            },
-            {
-              "x": 189.667,
-              "z": -34.317,
-              "levelIndex": 0
-            },
-            {
-              "x": 189.602,
-              "z": -34.323,
-              "levelIndex": 0
-            },
-            {
-              "x": 189.667,
-              "z": -34.318,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
-        "id": "d6b93b76-9be0-47e3-a811-9d9a366c2d6e",
-        "name": "autoroom 119",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 189.667,
-              "z": -34.317,
-              "levelIndex": 0
-            },
-            {
-              "x": 189.667,
-              "z": -34.318,
-              "levelIndex": 0
-            },
-            {
-              "x": 189.68,
-              "z": -34.317,
-              "levelIndex": 0
-            },
-            {
-              "x": 189.68,
-              "z": -34.315,
-              "levelIndex": 0
-            },
-            {
-              "x": 189.667,
-              "z": -34.317,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
-        "id": "ddfc626f-809e-4290-bb17-936249ad10c4",
-        "name": "autoroom 120",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 189.667,
-              "z": -34.318,
-              "levelIndex": 0
-            },
-            {
-              "x": 189.815,
-              "z": -37.456,
-              "levelIndex": 0
-            },
-            {
-              "x": 189.68,
-              "z": -34.317,
-              "levelIndex": 0
-            },
-            {
-              "x": 189.667,
-              "z": -34.318,
               "levelIndex": 0
             }
           ]
@@ -5456,45 +5111,6 @@
         "mapped": true
       },
       {
-        "id": "50a09f4c-d643-4f1a-aa80-4f41453c470c",
-        "name": "autoroom 127",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 194.865,
-              "z": -42.579,
-              "levelIndex": 0
-            },
-            {
-              "x": 194.864,
-              "z": -42.579,
-              "levelIndex": 0
-            },
-            {
-              "x": 194.968,
-              "z": -48.226,
-              "levelIndex": 0
-            },
-            {
-              "x": 194.979,
-              "z": -48.225,
-              "levelIndex": 0
-            },
-            {
-              "x": 194.865,
-              "z": -42.579,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
         "id": "ff40dcf1-98c3-494d-8c22-e00b4c07b574",
         "name": "Place 124",
         "levelIndex": 0,
@@ -5536,45 +5152,6 @@
             {
               "x": 194.88,
               "z": -42.578,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
-        "id": "807c394c-ab18-4137-a280-23c4d0947215",
-        "name": "autoroom 129",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 194.979,
-              "z": -48.225,
-              "levelIndex": 0
-            },
-            {
-              "x": 194.968,
-              "z": -48.226,
-              "levelIndex": 0
-            },
-            {
-              "x": 194.968,
-              "z": -48.227,
-              "levelIndex": 0
-            },
-            {
-              "x": 194.979,
-              "z": -48.226,
-              "levelIndex": 0
-            },
-            {
-              "x": 194.979,
-              "z": -48.225,
               "levelIndex": 0
             }
           ]
@@ -5627,79 +5204,6 @@
         "mapped": true
       },
       {
-        "id": "1467d5ef-8da8-4119-b23e-6d353352e8e5",
-        "name": "autoroom 131",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 195.171,
-              "z": -48.796,
-              "levelIndex": 0
-            },
-            {
-              "x": 195.17,
-              "z": -48.793,
-              "levelIndex": 0
-            },
-            {
-              "x": 195.17,
-              "z": -48.796,
-              "levelIndex": 0
-            },
-            {
-              "x": 195.171,
-              "z": -48.796,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
-        "id": "dc0998e0-67ce-44f1-a492-7ee634729e6f",
-        "name": "autoroom 132",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 195.838,
-              "z": -54.335,
-              "levelIndex": 0
-            },
-            {
-              "x": 195.171,
-              "z": -48.796,
-              "levelIndex": 0
-            },
-            {
-              "x": 195.17,
-              "z": -48.796,
-              "levelIndex": 0
-            },
-            {
-              "x": 195.835,
-              "z": -54.336,
-              "levelIndex": 0
-            },
-            {
-              "x": 195.838,
-              "z": -54.335,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
         "id": "6facb511-7d79-46a3-950f-b6309310d644",
         "name": "Place 110",
         "levelIndex": 0,
@@ -5736,74 +5240,6 @@
             {
               "x": 195.171,
               "z": -48.796,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
-        "id": "4c2486ed-07d0-408a-b7a5-a653be022f9c",
-        "name": "autoroom 134",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 195.838,
-              "z": -54.336,
-              "levelIndex": 0
-            },
-            {
-              "x": 195.838,
-              "z": -54.335,
-              "levelIndex": 0
-            },
-            {
-              "x": 195.835,
-              "z": -54.336,
-              "levelIndex": 0
-            },
-            {
-              "x": 195.838,
-              "z": -54.336,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
-        "id": "cac1faf2-94a9-468a-936d-157f898e8388",
-        "name": "autoroom 135",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 197.453,
-              "z": -42.358,
-              "levelIndex": 0
-            },
-            {
-              "x": 197.45,
-              "z": -42.358,
-              "levelIndex": 0
-            },
-            {
-              "x": 197.623,
-              "z": -47.986,
-              "levelIndex": 0
-            },
-            {
-              "x": 197.453,
-              "z": -42.358,
               "levelIndex": 0
             }
           ]
@@ -5920,79 +5356,6 @@
         "mapped": true
       },
       {
-        "id": "732262c4-a8a0-4341-8dfe-e85cfb8826e5",
-        "name": "autoroom 138",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 198.39,
-              "z": -54.101,
-              "levelIndex": 0
-            },
-            {
-              "x": 197.678,
-              "z": -48.567,
-              "levelIndex": 0
-            },
-            {
-              "x": 198.389,
-              "z": -54.101,
-              "levelIndex": 0
-            },
-            {
-              "x": 198.39,
-              "z": -54.101,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
-        "id": "74b032eb-2592-4314-972e-3cd205ca3b29",
-        "name": "autoroom 139",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 198.391,
-              "z": -54.108,
-              "levelIndex": 0
-            },
-            {
-              "x": 198.39,
-              "z": -54.101,
-              "levelIndex": 0
-            },
-            {
-              "x": 198.389,
-              "z": -54.101,
-              "levelIndex": 0
-            },
-            {
-              "x": 198.39,
-              "z": -54.108,
-              "levelIndex": 0
-            },
-            {
-              "x": 198.391,
-              "z": -54.108,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
         "id": "5788010b-ac70-4fea-9c46-20f161a9b2e3",
         "name": "Place 67",
         "levelIndex": 0,
@@ -6024,157 +5387,6 @@
             {
               "x": 199.139,
               "z": -59.578,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
-        "id": "85b6e16c-1eb3-49dc-8792-0ea829edb380",
-        "name": "autoroom 141",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 199.139,
-              "z": -62.951,
-              "levelIndex": 0
-            },
-            {
-              "x": 224.879,
-              "z": -60.707,
-              "levelIndex": 0
-            },
-            {
-              "x": 218.473,
-              "z": -61.013,
-              "levelIndex": 0
-            },
-            {
-              "x": 212.012,
-              "z": -61.716,
-              "levelIndex": 0
-            },
-            {
-              "x": 205.494,
-              "z": -62.296,
-              "levelIndex": 0
-            },
-            {
-              "x": 199.139,
-              "z": -62.904,
-              "levelIndex": 0
-            },
-            {
-              "x": 199.139,
-              "z": -62.951,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
-        "id": "1c1ef14e-f2f3-4c53-a661-fe40f123511d",
-        "name": "autoroom 142",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 200.003,
-              "z": -42.146,
-              "levelIndex": 0
-            },
-            {
-              "x": 200.05,
-              "z": -42.142,
-              "levelIndex": 0
-            },
-            {
-              "x": 200.049,
-              "z": -42.141,
-              "levelIndex": 0
-            },
-            {
-              "x": 200.003,
-              "z": -42.146,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
-        "id": "4480e025-5bd2-4584-bc47-0dc73a94d8d8",
-        "name": "autoroom 143",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 200.05,
-              "z": -42.142,
-              "levelIndex": 0
-            },
-            {
-              "x": 200.053,
-              "z": -42.141,
-              "levelIndex": 0
-            },
-            {
-              "x": 200.049,
-              "z": -42.141,
-              "levelIndex": 0
-            },
-            {
-              "x": 200.05,
-              "z": -42.142,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
-        "id": "53387852-f814-439e-a40b-b45bc046a190",
-        "name": "autoroom 144",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 200.053,
-              "z": -42.141,
-              "levelIndex": 0
-            },
-            {
-              "x": 200.05,
-              "z": -42.142,
-              "levelIndex": 0
-            },
-            {
-              "x": 200.34,
-              "z": -46.836,
-              "levelIndex": 0
-            },
-            {
-              "x": 200.053,
-              "z": -42.141,
               "levelIndex": 0
             }
           ]
@@ -6227,79 +5439,6 @@
         "mapped": true
       },
       {
-        "id": "f33b0025-5847-4351-82fd-f5c5fd56cecf",
-        "name": "autoroom 146",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 200.34,
-              "z": -46.836,
-              "levelIndex": 0
-            },
-            {
-              "x": 200.397,
-              "z": -47.772,
-              "levelIndex": 0
-            },
-            {
-              "x": 200.397,
-              "z": -47.771,
-              "levelIndex": 0
-            },
-            {
-              "x": 200.34,
-              "z": -46.836,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
-        "id": "f0b0e6e8-38f4-4b94-896d-82407d4fa6c9",
-        "name": "autoroom 147",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 200.397,
-              "z": -47.784,
-              "levelIndex": 0
-            },
-            {
-              "x": 200.398,
-              "z": -47.784,
-              "levelIndex": 0
-            },
-            {
-              "x": 200.397,
-              "z": -47.771,
-              "levelIndex": 0
-            },
-            {
-              "x": 200.397,
-              "z": -47.772,
-              "levelIndex": 0
-            },
-            {
-              "x": 200.397,
-              "z": -47.784,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
         "id": "7e7355ef-06c1-4179-9380-99f2910a3339",
         "name": "Place 112",
         "levelIndex": 0,
@@ -6339,79 +5478,6 @@
         "mapped": true
       },
       {
-        "id": "c3cb40b4-e795-47db-8c86-112a9c637385",
-        "name": "autoroom 149",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 200.869,
-              "z": -33.383,
-              "levelIndex": 0
-            },
-            {
-              "x": 200.869,
-              "z": -33.385,
-              "levelIndex": 0
-            },
-            {
-              "x": 200.892,
-              "z": -33.383,
-              "levelIndex": 0
-            },
-            {
-              "x": 200.892,
-              "z": -33.381,
-              "levelIndex": 0
-            },
-            {
-              "x": 200.869,
-              "z": -33.383,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
-        "id": "c571dbb9-4803-4521-9fea-6f40c39c86a9",
-        "name": "autoroom 150",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 200.869,
-              "z": -33.385,
-              "levelIndex": 0
-            },
-            {
-              "x": 201.117,
-              "z": -36.367,
-              "levelIndex": 0
-            },
-            {
-              "x": 200.892,
-              "z": -33.383,
-              "levelIndex": 0
-            },
-            {
-              "x": 200.869,
-              "z": -33.385,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
         "id": "79d9aff7-e938-409c-b967-c28b060e6554",
         "name": "Place 156",
         "levelIndex": 0,
@@ -6443,40 +5509,6 @@
             {
               "x": 206.053,
               "z": -35.857,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
-        "id": "7cfc4a42-f583-45c8-ac26-40ccc0fb0100",
-        "name": "autoroom 152",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 202.734,
-              "z": -41.895,
-              "levelIndex": 0
-            },
-            {
-              "x": 202.735,
-              "z": -41.899,
-              "levelIndex": 0
-            },
-            {
-              "x": 202.735,
-              "z": -41.895,
-              "levelIndex": 0
-            },
-            {
-              "x": 202.734,
-              "z": -41.895,
               "levelIndex": 0
             }
           ]
@@ -6526,74 +5558,6 @@
             {
               "x": 202.735,
               "z": -41.899,
-              "levelIndex": 0
-            },
-            {
-              "x": 203.132,
-              "z": -47.566,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
-        "id": "f5638c6c-8abc-42c5-b7f0-f294d5b67db8",
-        "name": "autoroom 154",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 203.128,
-              "z": -47.566,
-              "levelIndex": 0
-            },
-            {
-              "x": 203.132,
-              "z": -47.566,
-              "levelIndex": 0
-            },
-            {
-              "x": 202.735,
-              "z": -41.899,
-              "levelIndex": 0
-            },
-            {
-              "x": 203.128,
-              "z": -47.566,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
-        "id": "b9923fba-0731-4451-b352-10b0b742103e",
-        "name": "autoroom 155",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 203.132,
-              "z": -47.566,
-              "levelIndex": 0
-            },
-            {
-              "x": 203.128,
-              "z": -47.566,
-              "levelIndex": 0
-            },
-            {
-              "x": 203.128,
-              "z": -47.567,
               "levelIndex": 0
             },
             {
@@ -6677,74 +5641,6 @@
             {
               "x": 205.494,
               "z": -58.997,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
-        "id": "b493a499-99c0-4d42-a604-6315cf83c69c",
-        "name": "autoroom 158",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 205.594,
-              "z": -41.641,
-              "levelIndex": 0
-            },
-            {
-              "x": 205.59,
-              "z": -41.642,
-              "levelIndex": 0
-            },
-            {
-              "x": 205.594,
-              "z": -41.642,
-              "levelIndex": 0
-            },
-            {
-              "x": 205.594,
-              "z": -41.641,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
-        "id": "4cddc62e-8113-4aad-a104-d84e521e9a26",
-        "name": "autoroom 159",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 205.59,
-              "z": -41.642,
-              "levelIndex": 0
-            },
-            {
-              "x": 205.818,
-              "z": -47.071,
-              "levelIndex": 0
-            },
-            {
-              "x": 205.594,
-              "z": -41.642,
-              "levelIndex": 0
-            },
-            {
-              "x": 205.59,
-              "z": -41.642,
               "levelIndex": 0
             }
           ]
@@ -6846,40 +5742,6 @@
         "mapped": true
       },
       {
-        "id": "a81f6b26-352f-4fcc-830b-3686c10884d5",
-        "name": "autoroom 162",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 205.829,
-              "z": -47.324,
-              "levelIndex": 0
-            },
-            {
-              "x": 205.828,
-              "z": -47.319,
-              "levelIndex": 0
-            },
-            {
-              "x": 205.828,
-              "z": -47.324,
-              "levelIndex": 0
-            },
-            {
-              "x": 205.829,
-              "z": -47.324,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
         "id": "25e1324e-778d-4d9d-9e96-59cd6de31104",
         "name": "Place 114",
         "levelIndex": 0,
@@ -6911,40 +5773,6 @@
             {
               "x": 206.053,
               "z": -47.88,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
-        "id": "db0e49e2-1c28-454a-ad85-0fdc57928c95",
-        "name": "autoroom 164",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 208.203,
-              "z": -41.419,
-              "levelIndex": 0
-            },
-            {
-              "x": 208.2,
-              "z": -41.419,
-              "levelIndex": 0
-            },
-            {
-              "x": 208.478,
-              "z": -45.969,
-              "levelIndex": 0
-            },
-            {
-              "x": 208.203,
-              "z": -41.419,
               "levelIndex": 0
             }
           ]
@@ -7004,79 +5832,6 @@
             {
               "x": 208.256,
               "z": -41.414,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
-        "id": "062ccf44-8b38-45c0-970f-3dad705f3d9d",
-        "name": "autoroom 166",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 208.546,
-              "z": -47.088,
-              "levelIndex": 0
-            },
-            {
-              "x": 208.547,
-              "z": -47.088,
-              "levelIndex": 0
-            },
-            {
-              "x": 208.478,
-              "z": -45.969,
-              "levelIndex": 0
-            },
-            {
-              "x": 208.546,
-              "z": -47.088,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
-        "id": "f35853ca-b0de-4d61-b088-5916716839a9",
-        "name": "autoroom 167",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 208.547,
-              "z": -47.088,
-              "levelIndex": 0
-            },
-            {
-              "x": 208.546,
-              "z": -47.088,
-              "levelIndex": 0
-            },
-            {
-              "x": 208.547,
-              "z": -47.1,
-              "levelIndex": 0
-            },
-            {
-              "x": 208.548,
-              "z": -47.1,
-              "levelIndex": 0
-            },
-            {
-              "x": 208.547,
-              "z": -47.088,
               "levelIndex": 0
             }
           ]
@@ -7155,74 +5910,6 @@
             {
               "x": 210.82,
               "z": -32.426,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
-        "id": "fbe9db58-a01d-4e2b-abf5-962e4db3807b",
-        "name": "autoroom 170",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 210.825,
-              "z": -41.183,
-              "levelIndex": 0
-            },
-            {
-              "x": 210.82,
-              "z": -41.184,
-              "levelIndex": 0
-            },
-            {
-              "x": 210.825,
-              "z": -41.184,
-              "levelIndex": 0
-            },
-            {
-              "x": 210.825,
-              "z": -41.183,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
-        "id": "fef3941a-a2db-4f61-9751-eb979e4ba9b3",
-        "name": "autoroom 171",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 210.82,
-              "z": -41.184,
-              "levelIndex": 0
-            },
-            {
-              "x": 211.151,
-              "z": -46.62,
-              "levelIndex": 0
-            },
-            {
-              "x": 210.825,
-              "z": -41.184,
-              "levelIndex": 0
-            },
-            {
-              "x": 210.82,
-              "z": -41.184,
               "levelIndex": 0
             }
           ]
@@ -7373,40 +6060,6 @@
         "mapped": true
       },
       {
-        "id": "e1508e4f-0655-440e-a826-88522ddca7c9",
-        "name": "autoroom 175",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 213.408,
-              "z": -40.959,
-              "levelIndex": 0
-            },
-            {
-              "x": 213.407,
-              "z": -40.959,
-              "levelIndex": 0
-            },
-            {
-              "x": 213.408,
-              "z": -40.964,
-              "levelIndex": 0
-            },
-            {
-              "x": 213.408,
-              "z": -40.959,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
         "id": "a8ee034d-0c1e-4a1f-8d60-ff5c8b73594a",
         "name": "Place 117",
         "levelIndex": 0,
@@ -7461,74 +6114,6 @@
         "mapped": true
       },
       {
-        "id": "5f35c45d-417f-4a95-b0f0-9f4ffbf83b57",
-        "name": "autoroom 177",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 213.526,
-              "z": -43.005,
-              "levelIndex": 0
-            },
-            {
-              "x": 213.735,
-              "z": -46.639,
-              "levelIndex": 0
-            },
-            {
-              "x": 213.736,
-              "z": -46.639,
-              "levelIndex": 0
-            },
-            {
-              "x": 213.526,
-              "z": -43.005,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
-        "id": "6fe76a20-ac64-476f-8af6-08f58c93de00",
-        "name": "autoroom 178",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 213.735,
-              "z": -46.639,
-              "levelIndex": 0
-            },
-            {
-              "x": 213.736,
-              "z": -46.648,
-              "levelIndex": 0
-            },
-            {
-              "x": 213.736,
-              "z": -46.639,
-              "levelIndex": 0
-            },
-            {
-              "x": 213.735,
-              "z": -46.639,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
         "id": "b28624a0-d1ca-4265-8573-349847fa6285",
         "name": "Place 51",
         "levelIndex": 0,
@@ -7568,79 +6153,6 @@
         "mapped": true
       },
       {
-        "id": "8fb37c50-2f40-4e7c-88e8-6daeb9fae5c8",
-        "name": "autoroom 180",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 216.098,
-              "z": -40.744,
-              "levelIndex": 0
-            },
-            {
-              "x": 216.093,
-              "z": -40.744,
-              "levelIndex": 0
-            },
-            {
-              "x": 216.093,
-              "z": -40.745,
-              "levelIndex": 0
-            },
-            {
-              "x": 216.098,
-              "z": -40.744,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
-        "id": "d0ff5929-6e96-4b7e-8e4a-ced3739b087b",
-        "name": "autoroom 181",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 216.093,
-              "z": -40.745,
-              "levelIndex": 0
-            },
-            {
-              "x": 216.425,
-              "z": -46.415,
-              "levelIndex": 0
-            },
-            {
-              "x": 216.426,
-              "z": -46.415,
-              "levelIndex": 0
-            },
-            {
-              "x": 216.098,
-              "z": -40.744,
-              "levelIndex": 0
-            },
-            {
-              "x": 216.093,
-              "z": -40.745,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
         "id": "47e140e4-b9ef-4e21-8784-7fab146ecfc3",
         "name": "Place 53",
         "levelIndex": 0,
@@ -7672,40 +6184,6 @@
             {
               "x": 218.978,
               "z": -40.517,
-              "levelIndex": 0
-            }
-          ]
-        ],
-        "layerType": "polygon",
-        "mapped": true
-      },
-      {
-        "id": "da9c493c-1944-4236-91f4-1157dacbf527",
-        "name": "autoroom 183",
-        "levelIndex": 0,
-        "extras": {
-          "__lockMappingEdit": true
-        },
-        "coordinates": [
-          [
-            {
-              "x": 216.425,
-              "z": -46.415,
-              "levelIndex": 0
-            },
-            {
-              "x": 216.426,
-              "z": -46.42,
-              "levelIndex": 0
-            },
-            {
-              "x": 216.426,
-              "z": -46.415,
-              "levelIndex": 0
-            },
-            {
-              "x": 216.425,
-              "z": -46.415,
               "levelIndex": 0
             }
           ]

@@ -26,7 +26,6 @@ function App() {
 
   const [parkingSlot, setParkingSlot] = useState<ParkingSlotSearched>({ numberPlace: undefined });
   const [numberInputValue, setNumberInputValue] = useState<number | undefined>(parkingSlotFromUrl ? Number(parkingSlotFromUrl) : undefined);
-
   useEffect(() => {
     if (parkingSlotFromUrl) {
       const parsedParkingSlot = Number(parkingSlotFromUrl);
@@ -39,7 +38,7 @@ function App() {
 
   const isParkingNumberGood = (number: number | undefined | typeof NaN) => {
     if (number === undefined) {
-      return true;
+      return false;
     }
 
     if (isNaN(number)) {
@@ -49,8 +48,8 @@ function App() {
     return PLACES_NUMBERS.includes(number);
   };
 
-  const parkingSlotError = !isParkingNumberGood(parkingSlot.numberPlace);
   const numberInputValueError = !isParkingNumberGood(numberInputValue);
+  const isFormInvalid = typeof numberInputValue !== "undefined" && numberInputValueError;
 
   const onSubmit = () => {
     setParkingSlot({ numberPlace: numberInputValue });
@@ -60,7 +59,7 @@ function App() {
     <div className="container">
       <SpaceViewer parkingSlotSearched={parkingSlot} />
       <form onSubmit={(e) => e.preventDefault()}>
-        <FormControl className="search-container" isInvalid={numberInputValueError} onSubmit={onSubmit}>
+        <FormControl className="search-container" isInvalid={isFormInvalid} onSubmit={onSubmit}>
           <FormLabel color="teal.700" margin={0}>
             N° de place :
           </FormLabel>
@@ -72,16 +71,16 @@ function App() {
               onChange={(_, value) => {
                 setNumberInputValue(value);
               }}
-              focusBorderColor={numberInputValueError ? "red.400" : "teal.500"}
+              focusBorderColor={isFormInvalid ? "red.400" : "teal.500"}
               errorBorderColor="red.400"
               backgroundColor="gray.100"
               borderRadius={10}
-              isInvalid={numberInputValueError}
+              isInvalid={isFormInvalid}
               defaultValue={numberInputValue}
             >
               <NumberInputField />
             </NumberInput>
-            <IconButton aria-label="search" colorScheme="teal" onClick={onSubmit} type="submit" icon={<img src={SearchIcon} alt="search" width="25" />} aria-invalid={parkingSlotError} />
+            <IconButton aria-label="search" colorScheme="teal" onClick={onSubmit} type="submit" icon={<img src={SearchIcon} alt="search" width="25" />} isDisabled={numberInputValueError} />
             <IconButton
               aria-label="share"
               colorScheme="teal"
@@ -97,7 +96,7 @@ function App() {
                 });
               }}
               icon={<img src={ShareIcon} alt="search" width="19" />}
-              isDisabled={numberInputValueError || typeof numberInputValue !== "number"}
+              isDisabled={numberInputValueError}
             />
           </div>
           <FormErrorMessage margin={0}>Ce numéro de place n'existe pas.</FormErrorMessage>
