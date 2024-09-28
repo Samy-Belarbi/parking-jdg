@@ -2348,7 +2348,7 @@ export const parkingSlots = [
   },
   {
     id: "312e888d-7e3e-4232-9408-a59d5932249c",
-    name: "Place 31",
+    name: "Place 74",
     levelIndex: 0,
     extras: {
       __lockMappingEdit: true,
@@ -2397,7 +2397,7 @@ export const parkingSlots = [
   },
   {
     id: "9ba0f86e-f749-4802-a6e2-4f0e7e52ce16",
-    name: "Place 32",
+    name: "Place 75",
     levelIndex: 0,
     extras: {
       __lockMappingEdit: true,
@@ -2456,7 +2456,7 @@ export const parkingSlots = [
   },
   {
     id: "3f6de639-8833-4b22-9283-a4aec43038e0",
-    name: "Place 33",
+    name: "Place 76",
     levelIndex: 0,
     extras: {
       __lockMappingEdit: true,
@@ -2515,7 +2515,7 @@ export const parkingSlots = [
   },
   {
     id: "e5297bff-d6a2-492d-b6e0-612a249700c8",
-    name: "Place 88",
+    name: "Place 77",
     levelIndex: 0,
     extras: {
       __lockMappingEdit: true,
@@ -2574,7 +2574,7 @@ export const parkingSlots = [
   },
   {
     id: "b6a0fbc9-239e-456a-8451-10272cb670fe",
-    name: "Place 87",
+    name: "Place 78",
     levelIndex: 0,
     extras: {
       __lockMappingEdit: true,
@@ -2623,7 +2623,7 @@ export const parkingSlots = [
   },
   {
     id: "4d51291f-c521-4e4a-92b8-aa56f69fdc83",
-    name: "Place 85",
+    name: "Place 80",
     levelIndex: 0,
     extras: {
       __lockMappingEdit: true,
@@ -2667,7 +2667,7 @@ export const parkingSlots = [
   },
   {
     id: "5b1c1464-2c5e-4c63-b47b-544b8632a24d",
-    name: "Place 84",
+    name: "Place 81",
     levelIndex: 0,
     extras: {
       __lockMappingEdit: true,
@@ -2716,7 +2716,7 @@ export const parkingSlots = [
   },
   {
     id: "40121cf7-c6a0-4125-b491-45056a199937",
-    name: "Place 83",
+    name: "Place 82",
     levelIndex: 0,
     extras: {
       __lockMappingEdit: true,
@@ -2765,7 +2765,7 @@ export const parkingSlots = [
   },
   {
     id: "4acf1072-a370-4818-8885-2242f8ded32e",
-    name: "Place 82",
+    name: "Place 83",
     levelIndex: 0,
     extras: {
       __lockMappingEdit: true,
@@ -2819,7 +2819,7 @@ export const parkingSlots = [
   },
   {
     id: "863a8ef9-77c9-4485-a530-bde88b446fb7",
-    name: "Place 81",
+    name: "Place 84",
     levelIndex: 0,
     extras: {
       __lockMappingEdit: true,
@@ -2878,7 +2878,7 @@ export const parkingSlots = [
   },
   {
     id: "91f7d717-7468-468a-9917-9dfb6824173e",
-    name: "Place 80",
+    name: "Place 85",
     levelIndex: 0,
     extras: {
       __lockMappingEdit: true,
@@ -2937,7 +2937,7 @@ export const parkingSlots = [
   },
   {
     id: "3d2806b2-4a5c-4e11-ad49-ec82cd07a97a",
-    name: "Place 79",
+    name: "Place 86",
     levelIndex: 0,
     extras: {
       __lockMappingEdit: true,
@@ -2996,7 +2996,7 @@ export const parkingSlots = [
   },
   {
     id: "def64e6e-2061-4def-a8a1-9386c42875ed",
-    name: "Place 78",
+    name: "Place 87",
     levelIndex: 0,
     extras: {
       __lockMappingEdit: true,
@@ -3055,7 +3055,7 @@ export const parkingSlots = [
   },
   {
     id: "882880fa-1df6-4461-b37a-e5b42067cbe9",
-    name: "Place 77",
+    name: "Place 88",
     levelIndex: 0,
     extras: {
       __lockMappingEdit: true,
@@ -3114,7 +3114,7 @@ export const parkingSlots = [
   },
   {
     id: "0ca813c2-51b4-4d08-a939-302df8e6ab4e",
-    name: "Place 76",
+    name: "Place 33",
     levelIndex: 0,
     extras: {
       __lockMappingEdit: true,
@@ -3163,7 +3163,7 @@ export const parkingSlots = [
   },
   {
     id: "66a040ed-6e1d-424c-97a3-fdc00058ab55",
-    name: "Place 86",
+    name: "Place 79",
     levelIndex: 0,
     extras: {
       __lockMappingEdit: true,
@@ -3202,7 +3202,7 @@ export const parkingSlots = [
   },
   {
     id: "74fcd38b-8bab-449a-8fd9-ccecd190a2f5",
-    name: "Place 75",
+    name: "Place 32",
     levelIndex: 0,
     extras: {
       __lockMappingEdit: true,
@@ -3241,7 +3241,7 @@ export const parkingSlots = [
   },
   {
     id: "9bd6e4c7-b8a0-4aec-9fe9-4541fa9f234d",
-    name: "Place 74",
+    name: "Place 31",
     levelIndex: 0,
     extras: {
       __lockMappingEdit: true,
@@ -6344,7 +6344,7 @@ export const parkingSlots = [
   },
   {
     id: "1125fee2-8adf-4aa3-a5ab-fa7c26dfc2a2",
-    name: "Place 62",
+    name: "Place 63",
     levelIndex: 0,
     extras: {
       __lockMappingEdit: true,
