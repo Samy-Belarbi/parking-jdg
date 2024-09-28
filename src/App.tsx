@@ -39,7 +39,7 @@ function App() {
 
   const isParkingNumberGood = (number: number | undefined | typeof NaN) => {
     if (number === undefined) {
-      return false;
+      return true;
     }
 
     if (isNaN(number)) {

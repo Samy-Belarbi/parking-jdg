@@ -480,7 +480,7 @@ export const parkingSlots = [
   },
   {
     id: "d2a98690-3dbb-427d-922f-015671cb20b0",
-    name: "Place 10",
+    name: "Place 11",
     levelIndex: 0,
     extras: {
       __lockMappingEdit: true,
