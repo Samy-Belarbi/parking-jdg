@@ -1,13 +1,20 @@
 import { useEffect, useState } from "react";
 import { SpaceViewer } from "./SpaceViewer";
+import { parkingSlots } from "../data/data";
 
 import { FormControl, FormErrorMessage, FormLabel, IconButton, NumberInput, NumberInputField, useToast } from "@chakra-ui/react";
 
 import SearchIcon from "./assets/search_icon.svg";
 import ShareIcon from "./assets/share_icon.svg";
 
-const MIN_NUMBER_OF_PARKING_SLOTS = 1;
-const MAX_NUMBER_OF_PARKING_SLOTS = 136;
+const PLACES_NUMBERS = parkingSlots.map((slot) => {
+  const name = slot.name;
+  const lastNamePart = name.split(" ")[1];
+
+  if (!isNaN(Number(lastNamePart))) {
+    return parseInt(lastNamePart);
+  }
+});
 
 export type ParkingSlotSearched = { numberPlace: number | undefined };
 
@@ -24,28 +31,26 @@ function App() {
     if (parkingSlotFromUrl) {
       const parsedParkingSlot = Number(parkingSlotFromUrl);
 
-      if (parsedParkingSlot >= MIN_NUMBER_OF_PARKING_SLOTS && parsedParkingSlot <= MAX_NUMBER_OF_PARKING_SLOTS) {
+      if (PLACES_NUMBERS.includes(parsedParkingSlot)) {
         setParkingSlot({ numberPlace: parsedParkingSlot });
       }
     }
   }, [parkingSlotFromUrl]);
 
-  const isParkingNumberWrong = (number: number | undefined | typeof NaN) => {
+  const isParkingNumberGood = (number: number | undefined | typeof NaN) => {
     if (number === undefined) {
       return false;
     }
 
-    const isNan = isNaN(number);
-
-    if (isNan) {
+    if (isNaN(number)) {
       return false;
     }
 
-    return number < MIN_NUMBER_OF_PARKING_SLOTS || number > MAX_NUMBER_OF_PARKING_SLOTS;
+    return PLACES_NUMBERS.includes(number);
   };
 
-  const parkingSlotError = isParkingNumberWrong(parkingSlot.numberPlace);
-  const numberInputValueError = isParkingNumberWrong(numberInputValue);
+  const parkingSlotError = !isParkingNumberGood(parkingSlot.numberPlace);
+  const numberInputValueError = !isParkingNumberGood(numberInputValue);
 
   const onSubmit = () => {
     setParkingSlot({ numberPlace: numberInputValue });
@@ -62,8 +67,6 @@ function App() {
           <div className="number-input-container">
             <NumberInput
               flex={1}
-              min={MIN_NUMBER_OF_PARKING_SLOTS}
-              max={MAX_NUMBER_OF_PARKING_SLOTS}
               keepWithinRange={false}
               clampValueOnBlur={false}
               onChange={(_, value) => {
@@ -94,7 +97,7 @@ function App() {
                 });
               }}
               icon={<img src={ShareIcon} alt="search" width="19" />}
-              isDisabled={parkingSlotError || isParkingNumberWrong(numberInputValue) || typeof numberInputValue !== "number" || isNaN(numberInputValue)}
+              isDisabled={parkingSlotError || isParkingNumberGood(numberInputValue) || typeof numberInputValue !== "number" || isNaN(numberInputValue)}
             />
           </div>
           <FormErrorMessage margin={0}>Ce numéro de place n'existe pas.</FormErrorMessage>
