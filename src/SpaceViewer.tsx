@@ -84,7 +84,7 @@ export const SpaceViewer: FC<SpaceViewerProps> = ({ parkingSlotSearched }) => {
       color: (d: ParkingSlot) => {
         const isVisiteur = d.name.includes("Visiteur");
         if (isVisiteur) {
-          return "#D395FF";
+          return "#32a852";
         }
         return Number(d.name.replace(/^\D+/g, "")) === parkingSlotSearched.numberPlace ? "#40A9FF" : "#818181";
       },
