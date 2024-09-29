@@ -81,7 +81,13 @@ export const SpaceViewer: FC<SpaceViewerProps> = ({ parkingSlotSearched }) => {
       type: "polygon",
       data: parkingSlots,
       tooltip: (d: ParkingSlot) => d.name,
-      color: (d: ParkingSlot) => (Number(d.name.replace(/^\D+/g, "")) === parkingSlotSearched.numberPlace ? "#40A9FF" : "#818181"),
+      color: (d: ParkingSlot) => {
+        const isVisiteur = d.name.includes("Visiteur");
+        if (isVisiteur) {
+          return "#D395FF";
+        }
+        return Number(d.name.replace(/^\D+/g, "")) === parkingSlotSearched.numberPlace ? "#40A9FF" : "#818181";
+      },
       alpha: 1,
       height: 0.25,
       onClick: (d: ParkingSlot) => {
